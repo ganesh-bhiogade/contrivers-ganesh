@@ -1,0 +1,25 @@
+<template>
+    <div>
+    
+        <lightning-tabset active-tab-value="ONE">
+            <lightning-tab label="SHOW ADD" value="one">
+                <c-addition child-value></c-addition>
+                <lightning-button variant="brand" label="Addition" title="Addition" onclick={handleAdd} class="slds-m-left_x-small"></lightning-button>
+            </lightning-tab>
+            <lightning-tab label="SHOW SUB" value="two">
+                <c-subtraction child-value1></c-subtraction>
+                <lightning-button variant="brand" label="subtraction" title="subtraction" onclick={handleSub} class="slds-m-left_x-small"></lightning-button> 
+            </lightning-tab>
+            <lightning-tab label="SHOW MUL" value="three">
+                <c-multiplication child-value2 ></c-multiplication>
+                <lightning-button variant="brand" label="Multiplication" title="Multiplication" onclick={handleMul} class="slds-m-left_x-small"></lightning-button>  
+            </lightning-tab>
+            <lightning-tab label="SHOW DIV" value="four">
+                <c-division child-value3 ></c-division>
+                <lightning-button variant="brand" label="Division" title="Division" onclick={handleDiv} class="slds-m-left_x-small"></lightning-button>   
+            </lightning-tab>
+        </lightning-tabset>
+        </div>
+        
+        
+    </template>

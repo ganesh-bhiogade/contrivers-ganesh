@@ -1,0 +1,15 @@
+<template>
+    
+    <lightning-card  title=" Addition" icon-name="standard:formula">
+        <div>  
+    <lightning-input type="number"  label="First Number" value={firstNumber} onkeyup={handleFirstNumber}></lightning-input> 
+    </div>
+    <div>
+        <lightning-input type="number"  label="Second Number" value={secondNumber} onkeyup={handleSecondNumber}></lightning-input> 
+    </div> 
+    <span slot="footer">
+        result is:{result}
+    </span>
+  
+</lightning-card>
+</template>

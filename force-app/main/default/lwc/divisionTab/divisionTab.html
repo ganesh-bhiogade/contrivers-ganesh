@@ -1,0 +1,25 @@
+<template>
+    <div>
+    <lightning-card  title=" Division" icon-name="standard:formula">
+        <div>  
+    <lightning-input type="number"  label="First Number" step=".01" class="operand"></lightning-input> 
+    </div>
+    <div>
+        <lightning-input type="number"  label="Second Number" step=".01" class="operand"></lightning-input> 
+    </div> 
+    <div>
+        
+            <lightning-button variant="brand" label="Division" title="Division" onclick={handleDiv} class="slds-m-left_x-small"></lightning-button>
+            
+        
+    </div>
+
+    <div>
+        <template if:true={showResult}>
+            Result of {operation} is {result}
+        </template>
+    </div>
+  
+</lightning-card>
+</div>
+</template>
